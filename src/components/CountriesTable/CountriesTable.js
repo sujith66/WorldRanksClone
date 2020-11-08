@@ -60,7 +60,7 @@ const CountriesTable = ({ countries }) => {
         </button>
 
         <button className={styles.button_area} onClick={()=>setValueOnSort('area')}>
-          <div>Area (km<sub>2</sub>)</div>
+          <div>Area (km<sup>2</sup>)</div>
           <SortArrow direction={direction} />
         </button>
 
