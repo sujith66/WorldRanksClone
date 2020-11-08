@@ -95,7 +95,23 @@ const country = ({ country }) => {
   );
 };
 
-export const getServerSideProps = async ({ params }) => {
+export default country;
+
+export const getStaticPaths = async ()=>{
+  const result = await fetch("https://restcountries.eu/rest/v2/all");
+  const countryData = await result.json();
+
+  const countryCode = countryData.map(item=>({
+    params: {id: item.alpha3Code}
+  }));
+
+  return {
+    paths : countryCode,
+    fallback: false
+  }
+};
+
+export const getStaticProps = async ({ params }) => {
   const country = await getcountry(params.id);
   return {
     props: {
@@ -103,4 +119,3 @@ export const getServerSideProps = async ({ params }) => {
     },
   };
 };
-export default country;
