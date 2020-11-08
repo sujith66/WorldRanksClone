@@ -1,0 +1,113 @@
+.overview_panel img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.overview_panel {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--background-color-light);
+}
+
+.overview_country {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.overview_region {
+  text-align: center;
+  font-weight: 200;
+}
+.overview_numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  text-align: center;
+}
+
+.overview_population,
+.overview_area {
+  flex: 1;
+}
+
+.overview_label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-color-secondary);
+}
+.overview_value {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.details_panel {
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--background-color-light);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.details_panel_heading {
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 15px;
+  margin: 0;
+}
+.details_panel_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.details_name {
+  color: var(--text-color-secondary);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.neighbouring_panel_heading {
+  color: var(--text-color-secondary);
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.neighbouring_panel_borders {
+  padding: 20px;
+}
+.neighbouring_panel_borders_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+}
+.neighbouring_panel_borders img {
+  width: 100%;
+  border-radius: 4px;
+}
+.neighbouring_panel_name {
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1;
+  gap: 20px;
+}
+@media screen and (min-width: 720px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+  .container_left {
+    grid-column: 1 / span 4;
+  }
+  .container_right {
+    grid-column: 5 / span 8;
+  }
+}

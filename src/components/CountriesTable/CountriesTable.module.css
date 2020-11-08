@@ -1,0 +1,94 @@
+.heading {
+  display: flex;
+  align-items: center;
+}
+.heading button {
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button_name,
+.button_population,
+.button_area,
+.button_gini {
+  flex: 4;
+  padding: 20px;
+  font-weight: 500;
+  color: var(--text-color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_name {
+  justify-content: flex-start;
+}
+.button_flag {
+  flex: 1;
+  margin-right: 20px;
+}
+.headingArrow {
+  color: var(---text-color);
+  display: flex;
+  margin-left: 3px;
+}
+.row {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--background-color-light);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: var(--box-shadow);
+  font-weight: 500;
+  transition: transform 200ms ease-in-out;
+}
+
+.row:hover {
+  transform: translateY(-4px);
+}
+.name {
+  flex: 4;
+  text-align: left;
+}
+
+.population {
+  flex: 4;
+}
+.area {
+  flex: 4;
+}
+.gini {
+  flex: 4;
+}
+
+.flag {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.flag img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 720px) {
+  .area {
+    display: none;
+  }
+  .gini {
+    display: none;
+  }
+
+  .flag {
+    display: none;
+  }
+  .button_area,
+  .button_gini,
+  .button_flag {
+    display: none;
+  }
+}
