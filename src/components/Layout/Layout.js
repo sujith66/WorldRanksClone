@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import styles from "./Layout.module.css";
-import Link from "next/Link";
+import Link from "next/link";
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 
 function Layout({ children, title = "World Banks" }) {
