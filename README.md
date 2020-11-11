@@ -1,4 +1,5 @@
 A World Ranks clone from @Thu Nghiem's original post  "Full Project-based Tutorial - React + Next.js".
+Demo - https://world-ranking-clone.vercel.app/ 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
